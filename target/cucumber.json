@@ -1,0 +1,46 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "As a manager I should be able to create new channels.",
+        "description": "",
+        "id": "as-a-manager-i-should-be-able-to-create-new-sales-channels.;as-a-manager-i-should-be-able-to-create-new-channels.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "Go to URL",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "Click on BriteErpDemo",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "As a manager I should be able to create new Sales channels.",
+    "description": "",
+    "id": "as-a-manager-i-should-be-able-to-create-new-sales-channels.",
+    "keyword": "Feature",
+    "uri": "src\\test\\resources\\features\\createnewchannel.feature",
+    "tags": []
+  }
+]
