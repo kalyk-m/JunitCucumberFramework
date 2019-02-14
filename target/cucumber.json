@@ -1,32 +1,118 @@
 [
   {
-    "line": 1,
+    "line": 3,
     "elements": [
       {
-        "line": 5,
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1198237834,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Go to URL",
+            "match": {
+              "location": "LoginPageStepDefinitions.go_to_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4406615862,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on BriteErpDemo",
+            "match": {
+              "location": "LoginPageStepDefinitions.click_on_BriteErpDemo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2803501270,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter valid credentials \u0026 click login button",
+            "match": {
+              "location": "LoginPageStepDefinitions.enter_valid_credentials_click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 885106607,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Navigate and click on Sales module",
+            "match": {
+              "location": "LoginPageStepDefinitions.navigate_and_click_on_Sales_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6785513244,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
         "name": "As a manager I should be able to create new channels.",
         "description": "",
-        "id": "as-a-manager-i-should-be-able-to-create-new-sales-channels.;as-a-manager-i-should-be-able-to-create-new-channels.",
+        "id": "sales-module-page;as-a-manager-i-should-be-able-to-create-new-channels.",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 131648672,
+              "status": "passed"
             },
-            "line": 6,
-            "name": "Go to URL",
-            "match": {},
-            "keyword": "Given "
+            "line": 16,
+            "name": "Navigate to Configuration and click on Sales Channels",
+            "match": {
+              "location": "ConfigurationPageStepDefinitions.navigate_to_Configuration_and_click_on_Sales_Channels()"
+            },
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2642849184,
+              "status": "passed"
             },
-            "line": 7,
-            "name": "Click on BriteErpDemo",
-            "match": {},
-            "keyword": "Then "
+            "line": 17,
+            "name": "Click on Create button for create a new channel",
+            "match": {
+              "location": "ConfigurationPageStepDefinitions.click_on_Create_button_for_create_a_new_channel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 773377947,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Fill up SalesTeamName box and click on Save button",
+            "match": {
+              "location": "ConfigurationPageStepDefinitions.fill_up_SalesTeamName_box_and_click_on_Save_button()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -36,9 +122,9 @@
         ]
       }
     ],
-    "name": "As a manager I should be able to create new Sales channels.",
-    "description": "",
-    "id": "as-a-manager-i-should-be-able-to-create-new-sales-channels.",
+    "name": "Sales Module Page",
+    "description": "\tAs a manager I should be able to create new Sales channels.",
+    "id": "sales-module-page",
     "keyword": "Feature",
     "uri": "src\\test\\resources\\features\\createnewchannel.feature",
     "tags": []
