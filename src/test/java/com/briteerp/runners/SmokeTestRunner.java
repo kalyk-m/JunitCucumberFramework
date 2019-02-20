@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
               "json:target/cucumber.json"
         },
         features = "src/test/resources/features",
-        glue = "com/cybertek/step_definitions"
+        glue = "com/briteerp/step_definitions"
         , dryRun = false
         , tags = "@smoke"
 )
