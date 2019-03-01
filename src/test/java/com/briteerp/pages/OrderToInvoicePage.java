@@ -20,6 +20,9 @@ public class OrderToInvoicePage {
         @FindBy(xpath="(//input[@type='checkbox'])[3]")
         public WebElement clickFirstCheckbox;
 
+    @FindBy(xpath="(//button[@type='button'])[19]")
+    public WebElement pivot;
+
 
         @FindBy(xpath = "//table[@class='o_list_view table table-condensed table-striped o_list_view_ungrouped']/tbody/tr/td[4]")
         public List<WebElement> customers;

@@ -17,4 +17,3 @@ Feature: Sales Module Page
 		When Navigate to Configuration and click on Sales Channels
 		Then Click on Create button for create a new channel
 		And Fill up SalesTeamName box and click on Save button
-		

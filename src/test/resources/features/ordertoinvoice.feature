@@ -3,7 +3,7 @@ Feature: As I user, I should be able to get data from "Order to invoice"
 
   Background:
     Given Go to URL
-    Then Click on BriteErpDemo
+#    Then Click on BriteErpDemo
     And Enter valid credentials & click login button
     And Navigate and click on Sales module
     When click on Order to Invoice
@@ -18,7 +18,7 @@ Feature: As I user, I should be able to get data from "Order to invoice"
     Then click on the customer name
     And get customer's email
 
-  @wip
+
   Scenario Outline: verify that user should be able to see all the Customers' list
     Then get all customer <names> From the list
 
@@ -59,6 +59,18 @@ Feature: As I user, I should be able to get data from "Order to invoice"
 #    And click on Send a Card Recovery Email.
 #
 #
-#
-#  Scenario: verify that user should be able to access data in the pivot
-#    When click on Pivot
+  @wip
+  Scenario Outline: verify that user should be able to access data in the pivot
+    When click on Pivot
+    Then Get list of information
+
+      | month1 | <November_2018> |
+      | month2 | <December_2018> |
+      | month3 | <January_2018>  |
+
+    Examples:
+      | November_2018 | December_2018    | January_2018     |
+      | Campaign      | Incoterms        | Created by       |
+      | Company       | Salesperson      | Invoice Address  |
+      | Customer      | Delivery Address | Last Transaction |
+      | Medium        | Expiration Date  | Source           |

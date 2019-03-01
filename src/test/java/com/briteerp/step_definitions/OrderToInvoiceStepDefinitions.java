@@ -8,6 +8,8 @@ import cucumber.api.java.en.When;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.Map;
+
 public class OrderToInvoiceStepDefinitions {
     @When("click on Order to Invoice")
     public void click_on_Order_to_Invoice() {
@@ -74,6 +76,25 @@ public class OrderToInvoiceStepDefinitions {
         System.out.println(orderToInvoicePage.getCoordinate(3,4).getText());
 
     }
+
+    @When("click on Pivot")
+    public void click_on_Pivot() {
+        OrderToInvoicePage orderToInvoicePage = new OrderToInvoicePage();
+        orderToInvoicePage.pivot.click();
+    }
+
+    @Then("Get list of information")
+    public void get_list_of_information(Map<String, String> userInfo) {
+
+        System.out.println(userInfo);
+
+
+//        System.out.println(userInfo.get("month1"));
+//        System.out.println(userInfo.get("month2"));
+//        System.out.println(userInfo.get("month3"));
+
+    }
+
 
 
 
